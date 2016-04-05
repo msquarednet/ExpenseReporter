@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Expenses Angular App</title>
+  <link rel="stylesheet" href="content/bootstrap.css">
+  <style>body {margin: 4em 0 0 1em}</style>
+</head>
+<body>
+  <div ng-include="'app/layout/topNav.html'"></div>
+  <div>
+    <div ng-view></div>
+  </div>
+  
+  <!--vendor files-->
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/angular-route.js"></script>
+  
+  <!--my files-->
+  <script src="app/app.js"></script>
+  <!--<script src="app/Expense/Expense.js"></script>-->
+  <script src="app/Expense/ExpenseItem.js"></script>
+  <script src="app/Expense/expensesController.js"></script>
+  <script src="app/Expense/expensesDataService.js"></script>
+
+</body>
+</html>
